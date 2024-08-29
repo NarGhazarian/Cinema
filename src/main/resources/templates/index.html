@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" style="--bs-body-bg: #151518;" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+    />
+
+    <title>Kinomatron</title>
+
+</head>
+
+<body>
+<header th:insert="components/header::head">
+
+</header>
+<div class="row pt-5">
+    <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
+        <div class="text-center">
+            <br>
+            <p class="fw-bold text-success mb-2" style="margin-top: 17px;">#1 Правило Киноматрона</p>
+            <h1 class="fw-bold" style="color: rgb(255,255,255);">Все должны знать о Киноматроне</h1>
+        </div>
+    </div>
+    <div class="col-12 col-lg-10 mx-auto">
+        <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end;">
+            <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);"><img class="img-fluid"
+                                                                                                     data-bss-parallax=""
+                                                                                                     data-bss-parallax-speed="0.8"
+                                                                                                     src="assets/img/products/wa.jpg">
+            </div>
+            <div style="position: relative;flex: 0 0 45%;transform: translate3d(-5%, 20%, 0);"><img class="img-fluid"
+                                                                                                    data-bss-parallax=""
+                                                                                                    data-bss-parallax-speed="0.4"
+                                                                                                    src="assets/img/products/download.jpg">
+            </div>
+            <div style="position: relative;flex: 0 0 60%;transform: translate3d(0, 0%, 0);"><img class="img-fluid"
+                                                                                                 data-bss-parallax=""
+                                                                                                 data-bss-parallax-speed="0.25"
+                                                                                                 src="assets/img/products/606024.jpg">
+            </div>
+        </div>
+        <div id="catalog">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 style="color: rgb(255,255,255);margin-top: 45px;">Каталог Фильмов&nbsp;</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="movies"></div>
+    <div class="modal"></div>
+</div>
+<script src="js/app.js"></script>
+</body>
+
+</html>
